@@ -4,6 +4,51 @@
   --fontcolor: #505962;
 }
 
+/*
+  Mobile vs Desktop View
+*/
+
+@media (max-width: 768px) {
+  .logo {
+    margin-top: 0 !important;
+    height: 15rem !important;  
+  }
+
+  .navbar-brand {
+    height: 3rem;
+  }
+
+  .btn-quote {
+    height: 6rem;
+    width: 20rem;
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-view {
+    display: none !important;
+  }
+
+  .desktop-view {
+    display: block !important;
+  }
+
+  img.logo {
+    height: 6rem;  
+  }
+
+  .navbar-brand {
+  height: 3rem;
+}
+}
+
+.btn-quote {
+  background-color: black !important;
+  color: white !important;
+  height: 3rem;
+}
+
 body {
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
@@ -13,30 +58,33 @@ body {
 /* Navbar styles */
 .navbar {
   /* background: rgba(0, 0, 0, 0.6); */
-  background: rgba(0, 0, 0, 0.0);
+  background: rgba(0, 0, 0, 0.0) !important;
 }
 
-.navbar-brand {
-  height: 3rem;
+.navbar.scrolled {
+  background: black !important;
 }
 
-.btn-quote {
-  height: 3rem;
-  width: 10rem;
-}
 
-/* media styles */
-img {
-  height: 6rem;  
-}
 
-.video-background {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
-}
 
+
+
+
+
+/*
+  Video and Image
+*/
+
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 /* Content Styles */
 h1 {    
@@ -82,7 +130,7 @@ h1.span {
 .services-card {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2);  
+  background: rgba(255, 255, 255, 0.2);  
   margin-bottom: 5rem;
   height: 320px;
 }
@@ -160,8 +208,6 @@ h1.span {
 }
 
 
-
-
 /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)
@@ -180,3 +226,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 
 =============*/
+
+
+
+
