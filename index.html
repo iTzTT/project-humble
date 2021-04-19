@@ -17,88 +17,81 @@
     <img class="logo" src="images/hartlandHomes.png" alt="" />
   </a>
   <div class="nav-item">
-    <button class="btn shadow-lg btn-quote" id="mybtn"><strong>Get a Quote</strong></button>
+    <button class="btn shadow-lg btn-quote" onclick="modalPopup()" id="mybtn"><strong>Get a Quote</strong></button>
   </div>
 </nav>
 
-<header>
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-      <!-- Slide One - Set the background image for this slide in the line below -->
-      <div class="carousel-item active" style="background-image: url('images/finishedroof.jpg')">
-        <div class="carousel-caption d-none d-md-block">
-          <h2 class="display-4">Hartland Homes</h2>
-        </div>
+<div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <!-- Slide One - Set the background image for this slide in the line below -->
+    <div class="carousel-item active" style="background-image: url('images/finishedroof.jpg')">
+      <div class="carousel-caption d-none d-md-block">
+        <h2 class="display-4">Hartland Homes</h2>
       </div>
-      <!-- Slide Two - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url('images/roofaboveview.jpg')">
-        <!-- <div class="carousel-caption d-none d-md-block">
-          <h2 class="display-4">Second Slide</h2>
-          <p class="lead">This is a description for the second slide.</p>
-        </div> -->
-      </div>
-      <!-- Slide Three - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url('images/roofinprogress.jpg')"></div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+    <!-- Slide Two - Set the background image for this slide in the line below -->
+    <div class="carousel-item" style="background-image: url('images/roofaboveview.jpg')">
+      <!-- <div class="carousel-caption d-none d-md-block">
+        <h2 class="display-4">Second Slide</h2>
+        <p class="lead">This is a description for the second slide.</p>
+      </div> -->
+    </div>
+    <!-- Slide Three - Set the background image for this slide in the line below -->
+    <div class="carousel-item" style="background-image: url('images/roofinprogress.jpg')"></div>
   </div>
-</header>
+  <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+  <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+</div>
 
 
 <div class="main-container">
   <div class="container-fluid">        
     <div class="row d-flex justify-content-center">
-      <div class="col-sm-6 col-md-6 col-lg-6">
+      <div class="col-sm-8 col-md-8 col-lg-8">
         <p>
-          I am Generating random paragraphs can be an excellent way for writers to get their creative flow going at the beginning of the day. The writer has no idea what topic the random paragraph will be about when it appears. This forces the writer to use creativity to complete one of three common writing challenges. The writer can use the paragraph as the first one of a short story and build upon it. A second option is to use the random paragraph somewhere in a short story they create. The third option is to have the random paragraph be the ending paragraph in a short story. No matter which of these challenges is undertaken, the writer is forced to use creativity to incorporate the paragraph into their writing.
+          Hartland Homes is a local business providing many services ranging from roofing to Post frame sstructures. 
+          Our company has been serving the Houston/Conroe area for 5+ continuing to delivery excellent and reliable results to our customers.
+          Request a quote and get one step closer to a better home!
         </p>
       </div>
     </div>
   </div>
-  <h1 class="services-header">
-      Our Services
-  </h1>    
-  <div class="flex-container">
-    <div class="card flex-item services-card shadow-lg">
-      <div class="card-body">
-        <div class="card-title">Roofing</div>
-        <div class="card-info">
-          Where do they get a random paragraph?" he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.
+  <div class="service-area">
+    <h1 class="services-header">
+        Our Services
+    </h1>    
+    <div class="flex-container">
+      <div class="card flex-item services-card shadow-lg">
+        <div class="card-body">
+          <div class="card-title">Roofing</div>
+          <div class="card-info">
+            Where do they get a random paragraph?" he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.
+          </div>
+          <button class="btn btn-primary card-button" onclick="modalPopup();">Get a Quote</button>
         </div>
-        <button class="btn btn-primary card-button">Learn More</button>
       </div>
-    </div>
-    <div class="card flex-item services-card shadow-lg">
-      <div class="card-body">
-        <div class="card-title">Construction</div>
-        <div class="card-info">
-          Where do they get a random paragraph?" he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.
+      <div class="card flex-item services-card shadow-lg">
+        <div class="card-body">
+          <div class="card-title">Post Frame</div>
+          <div class="card-info">
+            Where do they get a random paragraph?" he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.
+          </div>
+          <button class="btn btn-primary card-button" onclick="modalPopup();">Get a Quote</button>
         </div>
-        <button class="btn btn-primary card-button">Learn More</button>
       </div>
-    </div>
-    <div class="card flex-item services-card shadow-lg">
-      <div class="card-body">
-        <div class="card-title">Other</div>
-        <div class="card-info">
-          Where do they get a random paragraph?" he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.
-        </div>
-        <button class="btn btn-primary card-button">Learn More</button>
-      </div>
-    </div>
-  </div>                
+    </div> 
+  </div>               
 </div>
 
 <div class="modal" id="myModal" tabindex="-1" role="dialog">
@@ -130,14 +123,14 @@
             <textarea id="description" class="form-control" name="description" rows="3" cols="50" required></textarea>
           </div>
           <div class="form-group">
-            <label for="selectService">Description</label>
+            <label for="selectService">Service Requested</label>
             <select id="selectService" class="form-control" name="selectService" rows="3" cols="50" required>
               <option value="NewRoof">New Roof</option>
               <option value="RoofRepair">Roof Repair</option>
               <option value="PostFrame">Post Frame Structure</option>
             </select>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-success">Send</button>
         </form>   
       </div>
       <div class="modal-footer">
@@ -157,14 +150,11 @@
   // Get the modal
   var modal = document.getElementById("myModal");
 
-  // Get the button that opens the modal
-  var btn = document.getElementById("mybtn");
 
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];
 
-  // When the user clicks on the button, open the modal
-  btn.onclick = function() {
+  modalPopup = function() {
     modal.style.display = "block";
   }
 
