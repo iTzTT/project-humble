@@ -106,11 +106,15 @@ h1.span {
   margin-top: 15rem;
 }
 
+.company-paragraph {
+  font-size:x-large
+}
+
 
 /* Flexbox styles */
 .flex-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 8rem;
   flex-wrap: wrap;
 }
@@ -128,7 +132,9 @@ h1.span {
   height: 100%;
   background: rgba(255, 255, 255, 0.2);  
   margin-bottom: 5rem;
-  height: 320px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  /* height: 320px; */
 }
 
 .card-button {
