@@ -12,7 +12,7 @@
 
 <body>
 
-<nav id="navbar" class="navbar navbar-default fixed-top">
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top">
   <a class="navbar-brand mr-auto" href="#">
     <img class="logo" src="images/hartlandHomes.png" alt="" />
   </a>
@@ -73,21 +73,23 @@
     </h1>    
     <div class="flex-container">
       <div class="card flex-item services-card shadow-lg">
+        <img src="images/barn_small.jpg" alt="" class="card-top" />
         <div class="card-body">
           <div class="card-title">Roofing</div>
           <div class="card-info">
             Where do they get a random paragraph?" he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.
           </div>
-          <button class="btn btn-primary card-button" onclick="modalPopup();">Get a Quote</button>
+          <button class="btn btn-outline-primary card-button" onclick="modalPopup();">Get a Quote</button>
         </div>
       </div>
       <div class="card flex-item services-card shadow-lg">
+        <img src="images/roof_small.jpg" alt="" class="card-top" />
         <div class="card-body">
           <div class="card-title">Post Frame</div>
           <div class="card-info">
             Where do they get a random paragraph?" he wondered as he clicked the generate button. Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and realized it was about random paragraphs and his world would never be the same.
           </div>
-          <button class="btn btn-primary card-button" onclick="modalPopup();">Get a Quote</button>
+          <button class="btn btn-outline-primary card-button" onclick="modalPopup();">Get a Quote</button>
         </div>
       </div>
     </div> 
@@ -130,7 +132,12 @@
               <option value="PostFrame">Post Frame Structure</option>
             </select>
           </div>
-          <button type="submit" class="btn btn-success">Send</button>
+          <div class="g-recaptcha" data-sitekey="6LdgDsIaAAAAAJEN0B1XBieg1ocekEIEhj4pUxLr"></div>          
+          <button 
+            type="submit" 
+            class="btn btn-outline-success"            
+            onClick="checkRecaptcha()"
+            value="submit">Send</button>
         </form>   
       </div>
       <div class="modal-footer">
@@ -144,6 +151,7 @@
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 
 <script>
 
@@ -170,12 +178,25 @@
     }
   }
 
-  function email() {
+  function email(token) {
     var form = document.getElementById("emailForm");
     console.log(form);
     return false;
   }
 
+  // Captcha3.0
+
+  function checkRecaptcha() {
+  var response = grecaptcha.getResponse();
+  if(response.length == 0) { 
+    //reCaptcha not verified
+    alert("no pass"); 
+  }
+  else { 
+    //reCaptch verified
+    alert("pass"); 
+  }
+}
 
 </script>
 
