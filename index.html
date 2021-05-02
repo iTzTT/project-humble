@@ -106,7 +106,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form name="emailForm" id="emailForm" onsubmit="return email()" method="post" enctype="text/plain">
+        <form name="emailForm" id="emailForm" onsubmit="return submitForm()" method="post" enctype="text/plain">
           <div class="form-group">
             <label for="nameInput">Name</label>
             <input type="text" class="form-control" id="nameInput" placeholder="Enter Name" required>
@@ -131,7 +131,7 @@
               <option value="RoofRepair">Roof Repair</option>
               <option value="PostFrame">Post Frame Structure</option>
             </select>
-          </div>
+          </div>          
           <div class="g-recaptcha" data-sitekey="6LcJE8IaAAAAALbmWWfL9VwyTf1Wvu3NaZwB5mwk" data-callback="checkRecaptcha"></div>          
           <button 
             type="submit" 
@@ -146,7 +146,7 @@
   </div>
 </div>
 
-
+<input type="hidden" id="recaptchaVerified" value="false" />
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
@@ -177,25 +177,34 @@
     }
   }
 
-  function email(token) {
+  function submitForm(token) {
     var form = document.getElementById("emailForm");
-    console.log(form);
+    var recaptchaVerified = document.getElementById("recaptchaVerified").value;
+
+    console.log('emailform', form);
+    console.log('recaptcha value', recaptchaVerified);
+
+    if (recaptchaVerified == "true") {
+      alert('submit worked!!');
+    } else {
+      alert('Please verify you are are not a robot');
+    }
     return false;
   }
 
   // Captcha3.0
 
   function checkRecaptcha() {
-  var response = grecaptcha.getResponse();
-  if(response.length == 0) { 
-    //reCaptcha not verified
-    alert("no pass"); 
+    var response = grecaptcha.getResponse();
+    if(response.length == 0) {     
+      alert("You were reported as a bot!");
+      console.log('recaptcha failed');     
+    }
+    else { 
+      document.getElementById("recaptchaVerified").value = "true";
+      console.log('recaptcha passed');
+    }
   }
-  else { 
-    //reCaptch verified
-    alert("pass"); 
-  }
-}
 
 </script>
 
