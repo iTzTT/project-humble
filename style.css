@@ -11,7 +11,7 @@
 @media (max-width: 768px) {
   .logo {
     margin-top: 0 !important;
-    height: 3rem !important;  
+    height: 6rem !important;  
   }
 
   .navbar-brand {
@@ -19,8 +19,12 @@
   }
 
   .btn-quote {
-    height: 6rem;
-    width: 8rem;
+    background-color: rgba(0,0,0,0.5);
+    border-color: black;
+    color: white !important;
+    height: 3rem;
+    font-size: 1rem;  
+    margin-left: 14rem;  
   }
 
   h1 {    
@@ -29,6 +33,38 @@
     line-height: 1.2;
     font-size: 7vw;
     text-align: center;  
+  }
+
+  .navbar-phone {
+    font-weight: bold;
+    color:white;
+    /* margin-right: 2rem; */
+    font-size: large;
+  }
+
+  .flex-item {
+    flex-basis: 700px;
+    height: 400px;
+    width: 300px;
+    margin-right: 1rem !important;
+    margin-left: 1rem !important;
+  }
+
+  .about-us-container {
+    background-color: black;
+    color: white;
+    height: 70rem;
+    background-image: url('images/roofbackground-small.jpg');    
+    
+  }
+
+  .about-us {
+    margin-top: 32rem;
+    align-self: center !important;
+    font-size: large;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    opacity: 1 !important;
   }
 }
 
@@ -53,8 +89,7 @@
     background-color: black;
     color: white;
     height: 70rem;
-    background-image: url('images/roofbackground-small.jpg');
-    opacity: 0.5;
+    background-image: url('images/roofbackground-small.jpg');    
     
   }
 
@@ -66,15 +101,29 @@
     padding: 2rem;
     opacity: 1 !important;
   }
+
+  .navbar-phone {
+    font-weight: bold;
+    color:white;
+    margin-right: 2rem;
+    font-size: xx-large;
+  }
+
+  .btn-quote {
+    background-color: rgba(0,0,0,0.5);
+    border-color: black;
+    color: white !important;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+
+  .flex-item {
+    flex-basis: 500px;
+    height: 400px;
+    width: 300px;
+  }
 }
 
-.btn-quote {
-  background-color: rgba(0,0,0,0.5);
-  border-color: black;
-  color: white !important;
-  height: 4rem;
-  font-size: 1.5rem;
-}
 
 body {
   overflow-x: hidden;
@@ -95,12 +144,6 @@ body {
   background: black !important;
 }
 
-.navbar-phone {
-  font-weight: bold;
-  color:white;
-  margin-right: 2rem;
-  font-size: xx-large;
-}
 
 
 
@@ -153,11 +196,11 @@ h1.span {
   flex-wrap: wrap;
 }
 
-.flex-item {
+/* .flex-item {
   flex-basis: 500px;
   height: 400px;
   width: 300px;
-}
+} */
 
 
 /* Our Services Cards */
@@ -186,7 +229,7 @@ h1.span {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 1000; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
