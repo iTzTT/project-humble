@@ -53,12 +53,18 @@
     background-color: black;
     color: white;
     height: 70rem;
+    background-image: url('images/roofbackground-small.jpg');
+    opacity: 0.5;
     
   }
 
   .about-us {
-    margin-top: 20rem;
+    margin-top: 32rem;
     align-self: center !important;
+    font-size: x-large;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    opacity: 1 !important;
   }
 }
 
