@@ -19,8 +19,9 @@
   }
 
   .btn-quote {
-    background-color: rgba(0,0,0,0.5);
-    border-color: black;
+    /* background-color: rgba(0,0,0,0.5); */
+    /* border-color: black; */
+    background-color: blue;
     color: white !important;
     height: 3rem;
     font-size: 1rem;  
@@ -118,8 +119,9 @@
   }
 
   .btn-quote {
-    background-color: rgba(0,0,0,0.5);
-    border-color: black;
+    /* background-color: rgba(0,0,0,0.5);
+    border-color: black; */
+    background-color: blue;
     color: white !important;
     height: 4rem;
     font-size: 1.5rem;
@@ -175,6 +177,7 @@ body {
 
 .carousel-caption {
   background-color: rgba(0,0,0,0.5);
+  margin-bottom: 2rem;
 }
 
 /* Content Styles */

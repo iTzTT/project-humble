@@ -33,18 +33,18 @@
   </ol>
   <div class="carousel-inner" role="listbox">    
     <div class="carousel-item active" style="background-image: url('images/finishedroofsmall.jpg')">
-      <div class="carousel-caption d-none d-md-block">        
-        <h2 class="display-4">Hartland Homes</h2>
+      <div class="carousel-caption d-md-block">        
+        <h5 class="display-6">Hartland Homes - Roof and Repair</h5>                
       </div>
     </div>    
     <div class="carousel-item" style="background-image: url('images/roofaboveview.jpg')">
-      <div class="carousel-caption d-none d-md-block">        
-        <h2 class="display-4">Roofing</h2>
+      <div class="carousel-caption d-md-block">        
+        <h2 class="display-6">Roofing</h2>
       </div>
     </div>    
     <div class="carousel-item" style="background-image: url('images/topofroof_small.jpg')">
-      <div class="carousel-caption d-none d-md-block">        
-        <h2 class="display-4">Barns/Sheds</h2>
+      <div class="carousel-caption d-md-block">        
+        <h2 class="display-6">Barns/Sheds</h2>
       </div>
   </div>
   <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
@@ -71,7 +71,7 @@
           <div class="card-info">
             Insert some blurb here about roofing.
           </div>
-          <button class="btn btn-outline-primary card-button" onclick="modalPopup();">Get a Quote</button>
+          <button class="btn btn-primary card-button" onclick="modalPopup();">Get a Quote</button>
         </div>
       </div>
       <div class="card flex-item services-card shadow-lg">
@@ -154,88 +154,7 @@
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 
-<script>
-
-  // Get the modal
-  var modal = document.getElementById("myModal");
-
-
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-
-  modalPopup = function() {
-    modal.style.display = "block";
-  }
-
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
-
-  function submitForm(token) {
-    var form = document.getElementById("emailForm");
-    var recaptchaVerified = document.getElementById("recaptchaVerified").value;
-
-    console.log('emailform', form);
-    console.log('recaptcha value', recaptchaVerified);
-
-    var templateParams = {
-        from_name: form.elements['nameInput'].value,
-        select_service: form.elements['selectService'].value,
-        service_description: form.elements['description'].value,
-        from_email: form.elements['emailInput'].value,
-        from_phone: form.elements['phoneInput'].value,
-        reply_to: form.elements['emailInput'].value
-    }
-
-    console.log('these are the template params', templateParams);
-
-    var testmode = true;
-
-    if (recaptchaVerified == "true" || testmode) {            
-      emailjs.send("service_dwam48l","template_7jotlbd",templateParams).then(function(response) {
-        console.log('SUCCESS!', response.status, response.text);
-        modal.style.display = "none";
-        alert('Quote requested!');
-        form.reset();
-      }, function(error) {
-        console.log('FAILED...', error);
-      });      
-    } else {
-      alert('Please verify you are are not a robot');
-    }
-    return false;
-  }
-
-  // Captcha3.0
-
-  function checkRecaptcha() {
-    var response = grecaptcha.getResponse();
-    if(response.length == 0) {     
-      alert("You were reported as a bot!");
-      console.log('recaptcha failed');     
-    }
-    else { 
-      document.getElementById("recaptchaVerified").value = "true";
-      console.log('recaptcha passed');
-    }
-  }
-
-  //emailJs
-
-  (function(){
-      emailjs.init("user_rDIHcLv0Jp41QFxvCjr4C");
-   })();
-   
-
-</script>
+<script src="app.js" type="text/javascript"></script>
 
 
 </body>
