@@ -53,18 +53,26 @@
   .about-us-container {
     background-color: black;
     color: white;
-    height: 70rem;
+    height: 52rem;
     background-image: url('images/roofbackground-small.jpg');    
     
   }
 
   .about-us {
-    margin-top: 32rem;
+    margin-top: 15rem;
     align-self: center !important;
     font-size: large;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 2rem;
     opacity: 1 !important;
+  }
+
+  .services-header {
+    margin-top: 10rem;
+  }
+
+  .flex-container {
+    margin-top: 4rem !important;
   }
 }
 
@@ -121,6 +129,10 @@
     flex-basis: 500px;
     height: 400px;
     width: 300px;
+  }
+
+  .services-header {
+    margin-top: 15rem;
   }
 }
 
@@ -179,9 +191,7 @@ h1.span {
   margin-top: 15rem;
 }
 
-.services-header {
-  margin-top: 15rem;
-}
+
 
 .company-paragraph {
   font-size:x-large

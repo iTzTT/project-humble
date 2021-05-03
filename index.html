@@ -42,7 +42,7 @@
         <h2 class="display-4">Roofing</h2>
       </div>
     </div>    
-    <div class="carousel-item" style="background-image: url('images/barnresized.jpg')">
+    <div class="carousel-item" style="background-image: url('images/topofroof_small.jpg')">
       <div class="carousel-caption d-none d-md-block">        
         <h2 class="display-4">Barns/Sheds</h2>
       </div>
@@ -69,7 +69,7 @@
         <div class="card-body">
           <div class="card-title">Roofing</div>
           <div class="card-info">
-            
+            Insert some blurb here about roofing.
           </div>
           <button class="btn btn-outline-primary card-button" onclick="modalPopup();">Get a Quote</button>
         </div>
@@ -79,7 +79,7 @@
         <div class="card-body">
           <div class="card-title">Post Frame</div>
           <div class="card-info">
-            
+            Insert some blurb here about post frame structures.
           </div>
           <button class="btn btn-outline-primary card-button" onclick="modalPopup();">Get a Quote</button>
         </div>
@@ -197,9 +197,14 @@
 
     console.log('these are the template params', templateParams);
 
-    if (recaptchaVerified == "true") {            
+    var testmode = true;
+
+    if (recaptchaVerified == "true" || testmode) {            
       emailjs.send("service_dwam48l","template_7jotlbd",templateParams).then(function(response) {
         console.log('SUCCESS!', response.status, response.text);
+        modal.style.display = "none";
+        alert('Quote requested!');
+        form.reset();
       }, function(error) {
         console.log('FAILED...', error);
       });      
