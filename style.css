@@ -91,6 +91,11 @@ a[href^=tel] {
   .logo-container {
     text-align: center;
   }
+
+  img.card-top {
+    max-height: 20rem !important;
+    /* max-width: 20rem !important; */
+  }
 }
 
 @media (min-width: 768px) {
