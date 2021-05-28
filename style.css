@@ -4,6 +4,12 @@
   --fontcolor: #505962;
 }
 
+/* Fixing Blue Phone # in Safari*/
+a[href^=tel] {
+  text-decoration:inherit;
+  color: inherit;
+}
+
 /*
   Mobile vs Desktop View
 */
