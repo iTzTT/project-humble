@@ -52,20 +52,20 @@
     margin-left: 1rem !important;
   }
 
-  .about-us-container {
+  .company-info-container .about-us-container {
+    width: 80%; 
+    padding: 5rem; 
+  }
+
+  .company-info-container {
+    background-image: url('images/roofbackground-small.jpg');
     background-color: black;
-    color: white;
-    height: 52rem;
-    background-image: url('images/roofbackground-small.jpg');    
-    
+    color: white;  
   }
 
   .about-us {
-    margin-top: 9rem;
-    align-self: center !important;
     font-size: large;
     background-color: rgba(0, 0, 0, 0.9);
-    padding: 2rem;
     opacity: 1 !important;
   }
 
@@ -75,6 +75,7 @@
 
   .flex-container {
     margin-top: 4rem !important;
+    display: flex;
   }
 
   .carousel-caption {
@@ -104,20 +105,21 @@
     text-align: center;  
   }
 
-  .about-us-container {
+  .company-info-container .about-us-container {
+    width: 80%;
+    padding: 5rem;
+  }
+
+  .company-info-container {
+    background-image: url('images/roofbackground-small.jpg');
     background-color: black;
-    color: white;
-    height: 70rem;
-    background-image: url('images/roofbackground-small.jpg');    
-    
+    color: white; 
+    height: 52rem; 
   }
 
   .about-us {
-    margin-top: 32rem;
-    align-self: center !important;
-    font-size: x-large;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 2rem;
+    font-size: large;
+    background-color: rgba(0, 0, 0, 0.9);
     opacity: 1 !important;
   }
 
@@ -250,6 +252,8 @@ h1.span {
   justify-content: center;
   margin-top: 8rem;
   flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
 }
 
 /* .flex-item {
