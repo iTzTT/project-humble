@@ -4,6 +4,12 @@
   --fontcolor: #505962;
 }
 
+/* Fixing Blue Phone # in Safari*/
+a[href^=tel] {
+  text-decoration:inherit;
+  color: inherit;
+}
+
 /*
   Mobile vs Desktop View
 */
@@ -85,6 +91,11 @@
 
   .logo-container {
     text-align: center;
+  }
+
+  img.card-top {
+    max-height: 20rem !important;
+    /* max-width: 20rem !important; */
   }
 }
 
