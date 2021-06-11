@@ -15,9 +15,103 @@ a[href^=tel] {
 */
 
 @media (max-width: 768px) {
+  
+
+  h1 {    
+    text-transform: uppercase;
+    letter-spacing: 3vw;
+    line-height: 1.2;
+    font-size: 7vw;
+    text-align: center;  
+  }
+
+
+  .flex-item {
+    flex-basis: 700px;
+    height: 400px;
+    width: 300px;
+    margin-right: 1rem !important;
+    margin-left: 1rem !important;
+  }
+
+<<<<<<< Updated upstream
+  .about-us-container {
+    background-color: black;
+    color: white;
+    height: 52rem;
+    background-image: url('images/roofbackground-small.jpg');    
+    
+  }
+
+  .about-us {
+    margin-top: 9rem;
+    align-self: center !important;
+    font-size: large;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 2rem;
+    opacity: 1 !important;
+=======
+  
+
+  .services-header {
+    margin-top: 10rem;
+  }
+
+  .flex-container {
+    margin-top: 4rem !important;
+    display: flex;
+  }
+
+
+}
+
+@media (min-width: 768px) {
+  h1 {    
+    text-transform: uppercase;
+    letter-spacing: 3vw;
+    line-height: 1.2;
+    font-size: 3vw;
+    text-align: center;  
+  }
+
+  .flex-item {
+    flex-basis: 500px;
+    height: 400px;
+    width: 300px;
+>>>>>>> Stashed changes
+  }
+
+  .services-header {
+    margin-top: 15rem;
+  }
+
+<<<<<<< Updated upstream
+  .flex-container {
+    margin-top: 4rem !important;
+=======
+
+
+  
+}
+
+
+body {
+  overflow-x: hidden;
+  font-family: 'Lato', cursive;
+  color: var(--fontcolor);
+}
+
+/****************************************************
+
+  Navbar styles 
+  
+******************************************************/
+
+@media (max-width: 768px) {
   .logo {
     margin-top: 0 !important;
     height: 6rem !important;  
+>>>>>>> Stashed changes
   }
 
   .navbar-brand {
@@ -34,58 +128,12 @@ a[href^=tel] {
     margin-left: 14.3rem;  
   }
 
-  h1 {    
-    text-transform: uppercase;
-    letter-spacing: 3vw;
-    line-height: 1.2;
-    font-size: 7vw;
-    text-align: center;  
-  }
-
   .navbar-phone {
     font-weight: bold;
     color:white;
     /* margin-right: 2rem; */
     font-size: large;
     text-decoration: none;
-  }
-
-  .flex-item {
-    flex-basis: 700px;
-    height: 400px;
-    width: 300px;
-    margin-right: 1rem !important;
-    margin-left: 1rem !important;
-  }
-
-  .about-us-container {
-    background-color: black;
-    color: white;
-    height: 52rem;
-    background-image: url('images/roofbackground-small.jpg');    
-    
-  }
-
-  .about-us {
-    margin-top: 9rem;
-    align-self: center !important;
-    font-size: large;
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 2rem;
-    opacity: 1 !important;
-  }
-
-  .services-header {
-    margin-top: 10rem;
-  }
-
-  .flex-container {
-    margin-top: 4rem !important;
-  }
-
-  .carousel-caption {
-    background-color: rgba(0,0,0,0.5);
-    margin-bottom: 5rem;  
   }
 
   .logo-container {
@@ -98,11 +146,13 @@ a[href^=tel] {
   }
 }
 
+
 @media (min-width: 768px) {
   img.logo {
     height: 10rem;  
   }
 
+<<<<<<< Updated upstream
   .navbar-brand {
     height: 5.5rem;
   }
@@ -130,6 +180,15 @@ a[href^=tel] {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 2rem;
     opacity: 1 !important;
+=======
+  .logo-container {
+    text-align: center;
+    margin-left: 3rem;
+  }
+
+  .navbar-brand {
+    height: 5.5rem;
+>>>>>>> Stashed changes
   }
 
   .navbar-phone {
@@ -148,36 +207,9 @@ a[href^=tel] {
     font-size: 1.5rem;
     width: 10rem;
   }
-
-  .flex-item {
-    flex-basis: 500px;
-    height: 400px;
-    width: 300px;
-  }
-
-  .services-header {
-    margin-top: 15rem;
-  }
-
-  .carousel-caption {
-    background-color: rgba(0,0,0,0.5);
-    margin-bottom: 2rem;  
-  }
-
-  .logo-container {
-    text-align: center;
-    margin-left: 3rem;
-  }
 }
 
 
-body {
-  overflow-x: hidden;
-  font-family: 'Lato', cursive;
-  color: var(--fontcolor);
-}
-
-/* Navbar styles */
 .navbar {
   /* background: rgba(0, 0, 0, 0.6); */
   background: rgba(0, 0, 0, 0.4) !important;
@@ -218,9 +250,25 @@ body {
 
 
 
-/*
-  Video and Image
-*/
+/***********************************************
+  
+Carousel and main screen
+
+************************************************/
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom: 5rem;  
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-caption {
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom: 2rem;  
+  }
+}
 
 .carousel-item {
   height: 100vh;
@@ -232,6 +280,66 @@ body {
   background-size: cover;  
 }
 
+.carousel-services {
+  position: absolute;
+  z-index: 20;
+  font-size: larger;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 60%;
+  left: 2rem;
+  height: 300px;
+  width: 18rem;
+  color: white;
+  padding: 1rem;
+}
+
+.google-map {
+  position: absolute;
+  z-index: 20;
+  top: 60%;
+  right: 2rem;
+}
+
+
+
+/*************************************************************************** 
+
+  Testimony Section 
+
+****************************************************************************/
+
+.testimony-container {
+  background-color: black;
+  height: 100vh;
+}
+
+.flex-container.testimony-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 8rem;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+}
+
+.testimony-container .flex-item {
+  align-self: center;
+}
+
+.testimony-container .testimony {
+  background-color: royalblue;
+  color: white;
+  text-align: center;
+}
+
+.testimony-container .testimony .testimony-text {
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.testimony-container .testimony .testimony-text {
+  font-weight: normal;
+}
 
 
 /* Content Styles */
@@ -249,25 +357,19 @@ h1.span {
 }
 
 
+/********************************************
 
-.company-paragraph {
-  font-size:x-large
-}
+Services Section
 
+*********************************************/
 
 /* Flexbox styles */
-.flex-container {
+.flex-container.services-container {
   display: flex;
   justify-content: center;
   margin-top: 8rem;
   flex-wrap: wrap;
 }
-
-/* .flex-item {
-  flex-basis: 500px;
-  height: 400px;
-  width: 300px;
-} */
 
 
 /* Our Services Cards */
@@ -293,6 +395,71 @@ h1.span {
 .card-title {
   font-size: 2rem;
 }
+
+
+/*********************************************
+
+About us and Company Info
+
+**********************************************/
+
+@media (min-width: 768px) {
+  .company-info-container .about-us-container {    
+    background-color: red;
+    margin-right: 5rem;    
+  }
+
+  .company-info-container {
+    background-image: url('images/roofbackground-small.jpg');
+    background-color: black;
+    color: white; 
+    height: 52rem; 
+  }
+
+  .about-us {
+    font-size: large;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 1 !important;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .company-info-container {
+    background-image: url('images/roofbackground-small.jpg');
+    background-color: black;
+    color: white;  
+  }
+
+  .about-us {
+    font-size: large;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 1 !important;
+  }
+}
+
+/* Flexbox styles */
+.flex-container.company-info-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.flex-container.company-info-container .flex-item {
+  align-self: center;
+}
+
+.company-paragraph {
+  font-size:x-large
+}
+
+
+/********************************************************
+
+Request a quote Modal
+
+*********************************************************/
 
 /* The Modal (background) */
 .modal {
