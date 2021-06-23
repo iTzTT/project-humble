@@ -34,28 +34,6 @@ a[href^=tel] {
     margin-left: 1rem !important;
   }
 
-<<<<<<< Updated upstream
-  .about-us-container {
-    background-color: black;
-    color: white;
-    height: 52rem;
-    background-image: url('images/roofbackground-small.jpg');    
-    
-  }
-
-  .about-us {
-    margin-top: 9rem;
-    align-self: center !important;
-    font-size: large;
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 2rem;
-    opacity: 1 !important;
-=======
-  
-
-  .services-header {
-    margin-top: 10rem;
-  }
 
   .flex-container {
     margin-top: 4rem !important;
@@ -78,18 +56,11 @@ a[href^=tel] {
     flex-basis: 500px;
     height: 400px;
     width: 300px;
->>>>>>> Stashed changes
   }
 
   .services-header {
     margin-top: 15rem;
   }
-
-<<<<<<< Updated upstream
-  .flex-container {
-    margin-top: 4rem !important;
-=======
-
 
   
 }
@@ -111,7 +82,6 @@ body {
   .logo {
     margin-top: 0 !important;
     height: 6rem !important;  
->>>>>>> Stashed changes
   }
 
   .navbar-brand {
@@ -152,35 +122,6 @@ body {
     height: 10rem;  
   }
 
-<<<<<<< Updated upstream
-  .navbar-brand {
-    height: 5.5rem;
-  }
-
-  h1 {    
-    text-transform: uppercase;
-    letter-spacing: 3vw;
-    line-height: 1.2;
-    font-size: 3vw;
-    text-align: center;  
-  }
-
-  .about-us-container {
-    background-color: black;
-    color: white;
-    height: 70rem;
-    background-image: url('images/roofbackground-small.jpg');    
-    
-  }
-
-  .about-us {
-    margin-top: 32rem;
-    align-self: center !important;
-    font-size: x-large;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 2rem;
-    opacity: 1 !important;
-=======
   .logo-container {
     text-align: center;
     margin-left: 3rem;
@@ -188,7 +129,6 @@ body {
 
   .navbar-brand {
     height: 5.5rem;
->>>>>>> Stashed changes
   }
 
   .navbar-phone {
@@ -369,6 +309,8 @@ Services Section
   justify-content: center;
   margin-top: 8rem;
   flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
 }
 
 
