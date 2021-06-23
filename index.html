@@ -17,26 +17,65 @@
 <body>
 
 <nav id="navbar" class="navbar navbar-default navbar-fixed-top">
-  <a class="navbar-brand mr-auto" href="#">
+  <div class="nav-item">
+    <a class="nav-link btn btn-secondary">About Us</a>
+  </div>
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      Roofing
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div>
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      Construction
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div>
+  <a class="navbar-brand mx-auto" href="#">
     <div class="logo-container">
-      <div>
-        <h2 class="hartland-logo">HARTLAND</h2>
-      </div>
-      <div>
-        <h2 class="homes-logo">HOMES</h2>
-      </div>
+      <img src="images/blacktextlogo.png" id="hh-logo" alt="#" />
     </div>    
   </a>
-  <!-- <div class="nav-item initial-container">
-    <span class="hh-initials">HH</span>
-  </div> -->
   <div class="nav-item">
-    <span class="navbar-phone">936-827-5826</span>
+    <a class="nav-link btn btn-secondary">Contact Us</a>
   </div>
   <div class="nav-item">
-    <button class="btn shadow-lg btn-outline-primary btn-quote" onclick="modalPopup()" id="mybtn"><strong>Quote</strong></button>
+    <a class="nav-link btn btn-secondary">Service Areas</a>
+  </div>
+  <div class="nav-item">
+    <!-- <button class="btn shadow-lg btn-outline-primary btn-quote" onclick="modalPopup()" id="mybtn"><strong>Quote</strong></button> -->
+    <a class="nav-link btn btn-secondary">Get a Quote</a>
   </div>
 </nav>
+
+<div class="social-container flex-container">
+  <img src="images/facebook.png" class="social-logo" />
+  <img src="images/instagramicon.png" class="social-logo" />
+  <div class="navbar-phone">
+    936-827-5826
+  </div>
+</div>
+
+<div class="desktop-view">
+  <div class="video-background">
+    <div class="video-wrap">
+      <div id="video">
+        <video id="bgvid" autoplay muted playsinline preload="metadata">
+          <source src="images/dronevolcano.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
   <div class="carousel-services">
@@ -49,7 +88,7 @@
       <li>Humble</li>
     </ul>
   </div>
-  <div class="google-map">
+  <!-- <div class="google-map">
     <iframe 
       width="300" 
       height="300" 
@@ -62,7 +101,7 @@
     </iframe>
     <a href='https://mapswebsite.org/'>visit website</a>
     <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=9ee357b5932a6d167153a61487de3118a8b23f1a'></script>
-  </div>
+  </div> -->
   <ol class="carousel-indicators">
     <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselIndicators" data-slide-to="1"></li>
@@ -142,7 +181,7 @@
         hi
       </p>
     </div>
-    
+
   </div>              
 </div>
 
