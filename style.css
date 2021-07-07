@@ -56,6 +56,14 @@ a[href^=tel] {
     text-align: center;  
   }
 
+  h3 {
+    text-transform: uppercase;
+    letter-spacing: 1.5vw;
+    line-height: 1.2;
+    font-size: 3vw;
+    text-align: center;  
+  }
+
   .flex-item {
     flex-basis: 500px;
     height: 400px;
@@ -263,7 +271,7 @@ Carousel and main screen
 ****************************************************************************/
 
 .testimony-container {
-  background-color: black;
+  background-color: white;
   height: 100vh;
 }
 
@@ -284,6 +292,7 @@ Carousel and main screen
   background-color: royalblue;
   color: white;
   text-align: center;
+  border-top: 1px solid lightgrey;
 }
 
 .testimony-container .testimony .testimony-text {
@@ -304,6 +313,12 @@ h1.span {
   font-size: 10vw;
   letter-spacing: -1.3vw;  
 }
+
+/* h1.span {
+  display: block;
+  font-size: 10vw;
+  letter-spacing: -1.3vw;
+} */
 
 
 .main-container {
